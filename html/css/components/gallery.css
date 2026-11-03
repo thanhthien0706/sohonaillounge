@@ -1,0 +1,33 @@
+.gallery {
+  background-color: var(--color-bg);
+}
+
+.gallery__title {
+  margin-bottom: var(--space-8);
+}
+
+.gallery__carousel .carousel__slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.gallery__carousel .carousel__slide img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base);
+}
+
+.gallery__carousel .carousel__slide img:hover {
+  transform: scale(1.03);
+}
+
+.gallery__carousel .carousel__arrow {
+  top: 0;
+  transform: none;
+  height: 100%;
+  border-radius: 0;
+}

@@ -1,0 +1,33 @@
+.menu-service {
+  background-color: var(--color-bg);
+}
+
+.menu-service__poster {
+  max-width: var(--max-width);
+  margin: 0 auto var(--space-12);
+}
+
+.menu-service__poster img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.menu-service__carousel .carousel__slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.menu-service__carousel .carousel__slide img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.menu-service__carousel .carousel__arrow {
+  top: 0;
+  transform: none;
+  height: 100%;
+  border-radius: 0;
+}

@@ -1,0 +1,117 @@
+.footer {
+  position: relative;
+  background-color: var(--color-bg-footer-bottom);
+  color: #fff;
+  overflow: hidden;
+}
+
+.footer__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.footer__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-footer-overlay);
+}
+
+.footer__inner {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) 0 var(--space-8);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: var(--space-10);
+}
+
+.footer__logo {
+  max-height: 80px;
+  width: auto;
+  margin-bottom: var(--space-4);
+}
+
+.footer__brand-title {
+  font-family: serif;
+  font-size: var(--text-lg);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-4);
+  color: #fff;
+}
+
+.footer__heading {
+  font-size: var(--text-md);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  color: #fff;
+}
+
+.footer__text {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.footer__fanpage-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.footer__fanpage-card img {
+  width: 100%;
+}
+
+.footer__fanpage-card a {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  text-align: center;
+  background-color: #1877f2;
+}
+
+.footer__maps {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  padding-bottom: var(--space-10);
+}
+
+.footer__map h4 {
+  color: #fff;
+  font-size: var(--text-md);
+  margin-bottom: var(--space-3);
+}
+
+.footer__map-frame {
+  border: 0;
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-sm);
+}
+
+.footer__bottom {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--space-4) 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 960px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+  .footer__maps {
+    grid-template-columns: 1fr;
+  }
+}

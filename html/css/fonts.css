@@ -1,0 +1,4 @@
+/* Thuỳ Thỏ Nail uses the browser's default system sans-serif stack — no custom webfont is loaded on the source site. */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}

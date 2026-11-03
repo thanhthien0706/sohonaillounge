@@ -1,0 +1,7 @@
+.booking {
+  background-color: var(--color-white);
+}
+
+.booking__title {
+  color: var(--color-text-primary);
+}

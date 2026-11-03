@@ -6,6 +6,30 @@
   margin-bottom: var(--space-8);
 }
 
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery__grid a {
+  display: block;
+}
+
+.gallery__grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base);
+  display: block;
+}
+
+.gallery__grid img:hover {
+  transform: scale(1.03);
+}
+
 .gallery__carousel .carousel__slide {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

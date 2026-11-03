@@ -77,6 +77,12 @@
   gap: var(--space-8);
 }
 
+.locations__grid--single {
+  grid-template-columns: 1fr;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .locations__item {
   display: flex;
   flex-direction: column;

@@ -115,6 +115,10 @@
   position: relative;
 }
 
+.header__nav-item--hidden {
+  display: none;
+}
+
 .header__nav-list > li > a {
   color: #0a0a09;
   font-size: var(--text-base);

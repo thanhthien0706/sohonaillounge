@@ -1,0 +1,14 @@
+body {
+  background-color: var(--color-white);
+}
+
+.booking,
+.gallery,
+.blog {
+  background-color: var(--color-white);
+}
+
+.reviews {
+  background-color: #f9f4ee;
+  width: 100%;
+}

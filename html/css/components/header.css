@@ -3,22 +3,45 @@
   z-index: 100;
 }
 
-/* Overlay variant: header floats transparently on top of the hero banner (home page) */
+/* Overlay variant: header floats on top of the hero banner (home page) */
 .header--overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .header--overlay .header__main {
   background: transparent;
 }
 
+.header--overlay .header__nav-list > li > a {
+  color: #fff;
+}
+
+.header--overlay .header__nav-list > li > a:hover,
+.header--overlay .header__nav-list > li.is-active > a {
+  color: var(--color-link);
+}
+
+.header--overlay .header__nav-toggle span {
+  background-color: #fff;
+}
+
+.header--overlay .header__topbar-inner a {
+  color: #fff;
+}
+
 @media (max-width: 960px) {
   .header--overlay .header__nav.is-open {
     background-color: var(--color-bg);
+  }
+
+  .header--overlay .header__nav.is-open .header__nav-list > li > a {
+    color: var(--color-text-primary);
   }
 }
 
@@ -72,7 +95,7 @@
 }
 
 .header__logo img {
-  max-height: 60px;
+  max-height: 100px;
   width: auto;
 }
 

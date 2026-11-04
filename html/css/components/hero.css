@@ -43,7 +43,7 @@
 }
 
 .hero__welcome a {
-  color: rgb(128, 0, 128);;
+  color: rgb(128, 0, 128);
   font-weight: 700;
 }
 
@@ -52,11 +52,21 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+  }
   .hero__bg {
-    height: 320px;
+    height: 700px;
   }
   .hero__welcome {
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: var(--space-6) var(--space-4);
+  }
+  .hero__welcome.is-visible {
+    transform: translate(-50%, -50%);
   }
   .hero__welcome-title {
     font-size: var(--text-lg);
@@ -113,6 +123,10 @@
 }
 
 @media (max-width: 768px) {
+  .locations {
+    margin-top: 50px !important;
+  }
+
   .locations__grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);
